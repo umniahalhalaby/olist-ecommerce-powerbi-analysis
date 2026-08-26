@@ -74,7 +74,7 @@ The raw geolocation dataset contains latitude and longitude information associat
 
 To create a suitable lookup for geographic enrichment, a PostgreSQL view was created containing one record per ZIP code prefix.
 
-The resulting view was then imported into Power BI and used in Power Query to enrich both the customer and seller tables with geographic attributes, including latitude and longitude.
+The resulting view was then imported into Power BI and used in Power Query to enrich both the customers table with geographic attributes, including latitude and longitude.
 
 The workflow was:
 
@@ -84,18 +84,40 @@ PostgreSQL View with Unique ZIP Code Prefixes
 ↓  
 Power BI / Power Query  
 ↓  
-Merge with Customers and Sellers  
+Merge with Customers  
 ↓  
-Latitude & Longitude added to Customer and Seller tables
+Latitude & Longitude added to Customers table
 
-After the required geographic attributes were merged into the customer and seller tables, load was disabled for the intermediate geolocation query because it was no longer required as a separate table in the Power BI data model.
+After geographic enrichment, 0.3% of customer records had unavailable latitude or longitude values. These records were retained in the analytical model. All 27 Brazilian states remained represented in the state-level geographic analysis.
+
+After the required geographic attributes were merged into the customers table, load was disabled for the intermediate geolocation query because it was no longer required as a separate table in the Power BI data model.
+
+
 
 ### Product Category Preparation
 
-Product categories were standardized before analysis. Portuguese category names were mapped to their English equivalents using the provided category translation table. Missing category values were labeled as **"Not Specified"**.
+Product categories were standardized before analysis. Portuguese category names were mapped to their English equivalents using the provided category translation table.
+Approximately 2% of products had missing category information and were retained under **"Not Specified"** rather than excluded. These products accounted for approximately **1.3% of total revenue**, indicating a limited impact on category-level revenue analysis.
 
+### Order Delivery Status Preparation
 
+Missing delivery dates in the orders table were investigated and found to correspond primarily to orders that had not reached a delivered status, rather than representing arbitrary missing data.
 
+A delivery-status flag was created to distinguish successfully delivered orders from non-delivered orders. This flag was subsequently used to ensure that delivery-time and delay analyses were calculated only for relevant orders.
+
+Tables and columns used in the analytical model were renamed using clear, business-friendly naming conventions to improve readability and usability within Power BI.
+
+### Review Data Preparation
+
+The `order_reviews` table contained multiple review submissions for some orders. Of 99,441 orders, 547 (0.55%) had more than one review submission.
+
+Among these duplicate submissions, 202 orders (37%) had a change in review score, while 345 (63%) retained the same score and differed only in review content.
+
+To ensure one review score per order and reflect the customer's latest available assessment, the most recent review was retained based on the review creation date, using the answer timestamp as a tiebreaker.
+
+A PostgreSQL view containing one retained review per order was then created and imported into Power BI for review-score analysis.
+
+## Data Model
 
 
 
