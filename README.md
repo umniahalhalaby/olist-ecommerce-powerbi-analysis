@@ -142,6 +142,9 @@ Using `customer_state` or `seller_state` directly as the visual axis would apply
 This approach was used to compare **Customer Share by State** and **Seller Share by State** and evaluate whether Olist's seller network geographically aligns with its customer distribution.
 
 
+![Power BI Data Model](images/Data Model.png)
+
+
 
 
 
