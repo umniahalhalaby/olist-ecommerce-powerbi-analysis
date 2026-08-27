@@ -123,6 +123,8 @@ The prepared data was loaded into Power BI and organized into a relational model
 
 The model was designed to support sales, delivery, and geospatial analysis, including revenue trends, product-category performance, customer and seller distribution, and order fulfillment across Brazilian states.
 
+![Power BI Data Model](images/Data_Model.png)
+
 ### Model Structure
 
 - **Orders** — order-level and delivery information
@@ -142,7 +144,7 @@ Using `customer_state` or `seller_state` directly as the visual axis would apply
 This approach was used to compare **Customer Share by State** and **Seller Share by State** and evaluate whether Olist's seller network geographically aligns with its customer distribution.
 
 
-![Power BI Data Model](images/Data Model.png)
+
 
 
 
