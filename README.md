@@ -143,6 +143,22 @@ Using `customer_state` or `seller_state` directly as the visual axis would apply
 
 This approach was used to compare **Customer Share by State** and **Seller Share by State** and evaluate whether Olist's seller network geographically aligns with its customer distribution.
 
+## Power BI Report
+
+The Power BI report consists of four interactive pages, moving from a high-level overview of business performance to focused analysis of sales, delivery, and geographic patterns.
+
+### 1. Executive Summary
+
+Provides a high-level view of Olist's overall business performance, combining key sales, customer satisfaction, and delivery indicators in a single page.
+
+The page tracks revenue, order volume, average order value, review scores, and delivery performance, while highlighting revenue trends and the states and product categories contributing most to revenue.
+
+![Executive Summary](images/Executive-Eummary.png)
+
+### 2. Sales & Revenue
+### 3. Delivery & Logistics
+### 4. Geospatial Analysis
+
 
 
 
