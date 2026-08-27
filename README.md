@@ -74,7 +74,7 @@ The raw geolocation dataset contains latitude and longitude information associat
 
 To create a suitable lookup for geographic enrichment, a PostgreSQL view was created containing one record per ZIP code prefix.
 
-The resulting view was then imported into Power BI and used in Power Query to enrich both the customers table with geographic attributes, including latitude and longitude.
+The resulting view was then imported into Power BI and used in Power Query to enrich the customers table with geographic attributes, including latitude and longitude.
 
 The workflow was:
 
@@ -118,6 +118,29 @@ To ensure one review score per order and reflect the customer's latest available
 A PostgreSQL view containing one retained review per order was then created and imported into Power BI for review-score analysis.
 
 ## Data Model
+
+The prepared data was loaded into Power BI and organized into a relational model connecting orders with customers, order items, products, sellers, reviews, and a dedicated Date table.
+
+The model was designed to support sales, delivery, and geospatial analysis, including revenue trends, product-category performance, customer and seller distribution, and order fulfillment across Brazilian states.
+
+### Model Structure
+
+- **Orders** — order-level and delivery information
+- **Order Items** — item-level sales data
+- **Customers** — customer and geographic information
+- **Products** — product and category information
+- **Sellers** — seller information
+- **Order Reviews** — cleaned order-level review data
+- **Date** — date dimension for time intelligence
+
+  ### Disconnected State Dimension
+
+A disconnected `dim_state` table was created from the distinct states available in the Olist geolocation dataset to support a direct comparison between customer and seller geographic distributions.
+
+Using `customer_state` or `seller_state` directly as the visual axis would apply the filter context from only one side of the comparison. The disconnected state dimension therefore provides a common geographic axis, while DAX measures use `TREATAS` to apply the selected state context independently to the customer and seller tables.
+
+This approach was used to compare **Customer Share by State** and **Seller Share by State** and evaluate whether Olist's seller network geographically aligns with its customer distribution.
+
 
 
 
