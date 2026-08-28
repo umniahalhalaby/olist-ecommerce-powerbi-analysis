@@ -163,6 +163,12 @@ The page compares revenue, orders, units sold, and average order value with the 
 
 ![Sales & Revenue](images/Sales_Revenue.png)
 ### 3. Delivery & Logistics
+
+Evaluates order fulfillment performance, delivery reliability, and the impact of delays on customer satisfaction.
+
+The page tracks average delivery time, delay severity, on-time delivery, and order failure rates against the comparable prior-year period. It also examines how customer review scores change as delivery delays become more severe.
+
+![Delivery & Logistics](images/Delivery_Logistics.png)
 ### 4. Geospatial Analysis
 
 
