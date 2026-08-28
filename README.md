@@ -156,6 +156,12 @@ The page tracks revenue, order volume, average order value, review scores, and d
 ![Executive Summary](images/Executive_Summary.png)
 
 ### 2. Sales & Revenue
+
+Focuses on revenue performance and the factors driving sales across product categories.
+
+The page compares revenue, orders, units sold, and average order value with the equivalent prior-year period, while examining revenue trends and category performance. It also explores whether high-revenue categories are driven by higher order values and how concentrated revenue is across the product portfolio.
+
+![Sales & Revenue](images/Sales_Revenue.png)
 ### 3. Delivery & Logistics
 ### 4. Geospatial Analysis
 
