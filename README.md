@@ -153,7 +153,7 @@ Provides a high-level view of Olist's overall business performance, combining ke
 
 The page tracks revenue, order volume, average order value, review scores, and delivery performance, while highlighting revenue trends and the states and product categories contributing most to revenue.
 
-![Executive Summary](images/Executive-Eummary.png)
+![Executive Summary](images/Executive_Summary.png)
 
 ### 2. Sales & Revenue
 ### 3. Delivery & Logistics
