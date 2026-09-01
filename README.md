@@ -177,6 +177,20 @@ The page identifies the strongest revenue-generating states, compares customer a
 
 ![Geospatial Analysis](images/Geospatial_Analysis.png)
 
+## Key Insights
+
+- **Strong sales growth:** Revenue increased by **81.9%** in the selected 2018 period compared with the equivalent period in 2017, while orders increased by **84.2%** and units sold by **85.2%**. Average order value declined slightly by **1.2%**, indicating that growth was primarily driven by higher sales volume rather than higher-value orders.
+
+- **Revenue is concentrated across a relatively small group of categories:** The top **18 product categories generated approximately 80.9% of total revenue**, showing that a limited portion of the product portfolio accounts for most sales.
+
+- **Delivery performance shows mixed results:** Average delivery time remained broadly unchanged compared with the equivalent prior-year period, while the average delay among late orders improved by **2.7 days**. However, on-time delivery declined by **4.9 percentage points**, indicating that a larger share of orders missed their estimated delivery date.
+
+- **Delivery delays are associated with substantially lower customer satisfaction:** Orders delivered on time or early received an average review score of approximately **4.3**, while increasingly delayed orders generally received much lower ratings, falling to around **1.6–1.9** among the most severely delayed groups.
+
+- **Revenue is geographically concentrated:** São Paulo (SP) was the leading revenue state, accounting for approximately **40.4% of revenue** in the selected 2018 period.
+
+- **Cross-state fulfillment is associated with weaker delivery performance:** Approximately **61.9% of orders were fulfilled by sellers located in a different state from the customer.** Cross-state orders averaged **15.0 delivery days**, compared with **7.4 days** for same-state orders. They also had lower on-time delivery (**89.2% vs. 93.0%**) and substantially longer delays when late (**10.2 vs. 5.6 days**).
+
 
 
 
