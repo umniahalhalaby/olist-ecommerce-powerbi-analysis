@@ -171,6 +171,12 @@ The page tracks average delivery time, delay severity, on-time delivery, and ord
 ![Delivery & Logistics](images/Delivery_Logistics.png)
 ### 4. Geospatial Analysis
 
+Examines the geographic distribution of customers, sellers, and revenue across Brazil, and evaluates how seller location affects delivery performance.
+
+The page identifies the strongest revenue-generating states, compares customer and seller distribution across regions, and analyzes the share of same-state versus cross-state fulfillment. It also evaluates whether cross-state fulfillment is associated with differences in delivery time, on-time performance, and delay severity.
+
+![Geospatial Analysis](images/Geospatial_Analysis.png)
+
 
 
 
