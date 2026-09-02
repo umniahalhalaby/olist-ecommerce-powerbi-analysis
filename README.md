@@ -191,9 +191,43 @@ The page identifies the strongest revenue-generating states, compares customer a
 
 - **Cross-state fulfillment is associated with weaker delivery performance:** Approximately **61.9% of orders were fulfilled by sellers located in a different state from the customer.** Cross-state orders averaged **15.0 delivery days**, compared with **7.4 days** for same-state orders. They also had lower on-time delivery (**89.2% vs. 93.0%**) and substantially longer delays when late (**10.2 vs. 5.6 days**).
 
+## Repository Structure
 
+```text
+olist-ecommerce-powerbi-analysis/
+│
+├── README.md
+├── olist-ecommerce-analysis.pbix
+│
+├── images/
+│   ├── Data_Model.png
+│   ├── Executive_Summary.png
+│   ├── Sales_Revenue.png
+│   ├── Delivery_Logistics.png
+│   └── Geospatial_Analysis.png
+│
+├── sql/
+│   ├── 01_constraints_and_relationships.sql
+│   ├── 02_data_quality_checks.sql
+│   ├── 03_geolocation_preparation.sql
+│   ├── 04_review_preparation.sql
+│   ├── 05_state_dimension.sql
+│   └── 06_fulfillment_classification.sql
+│
+└── python/
+    └── review_data_import.ipynb
 
+## Data Source
 
+This project uses the Brazilian E-Commerce Public Dataset by Olist, which contains information on approximately 100,000 orders from multiple marketplaces in Brazil between 2016 and 2018.
+
+The dataset includes information about orders, customers, sellers, products, payments, customer reviews, and geographic locations.
+
+The original dataset is publicly available on Kaggle:
+
+[Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+
+> The raw CSV files are not included in this repository and can be downloaded directly from the original Kaggle dataset.
 
 
 
